@@ -42,7 +42,7 @@ h2 {
 .add-container button {
   padding: 0.6rem 1.2rem;
   margin-top: 1rem;
-  background-color: #f5c518;
+  background-color: #18aff5;
   color: #111;
   border: none;
   border-radius: 8px;
@@ -52,7 +52,7 @@ h2 {
 }
 
 .add-container button:hover {
-  background-color: #d4a017;
+  background-color: #0f83b8;
 }
 
 .comment-container {
@@ -81,13 +81,13 @@ ul {
 
 .comment-style:hover {
   transform: scale(1.02);
-  border-color: #f5c518;
+  border-color: #18aff5;
 }
 
 .comment-style button {
   margin: 0.3rem;
   padding: 0.4rem 0.8rem;
-  background-color: #f5c518;
+  background-color: #18aff5;
   color: #111;
   border: none;
   border-radius: 6px;
@@ -96,14 +96,14 @@ ul {
 }
 
 .comment-style button:hover {
-  background-color: #d4a017;
+  background-color: #0f83b8;
 }
 
 a {
   display: block;
   text-align: center;
   margin-top: 2rem;
-  color: #f5c518;
+  color: #18aff5;
   text-decoration: none;
   font-weight: bold;
 }

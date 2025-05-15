@@ -27,9 +27,10 @@ export const getCommentsByPublication = async(publicationId)=>{
     }
 }
 
-export const publicationFilter = async()=>{
+export const publicationFilter = async(course)=>{
     try {
-        
+        const res = await apiPublication.get(`/publication/filter/${course}`)
+        return res.data
     } catch (error) {
         
     }
