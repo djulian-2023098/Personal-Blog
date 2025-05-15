@@ -1,0 +1,276 @@
+{
+	"info": {
+		"_postman_id": "88631d8e-0de9-4fb7-b2a1-dbfb7aa3500c",
+		"name": "Blog de Aprendizaje",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37956977"
+	},
+	"item": [
+		{
+			"name": "Publications",
+			"item": [
+				{
+					"name": "getAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:2636/publication/getAll",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"publication",
+								"getAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addPublication",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "title",
+									"value": "Tarea",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Tarea pa la casa",
+									"type": "text"
+								},
+								{
+									"key": "course",
+									"value": "tecnología",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:2636/publication/save",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"publication",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdatePublication",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "title",
+									"value": "Tarea cuchao",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:2636/publication/update/68241ebd91d9950e86a0290a",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"publication",
+								"update",
+								"68241ebd91d9950e86a0290a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deletePublication",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:2636/publication/delete/68241ebd91d9950e86a0290a",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"publication",
+								"delete",
+								"68241ebd91d9950e86a0290a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getCommentByPublication",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:2636/comment/getOne/6824282a4332ad3c1a12c579",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"comment",
+								"getOne",
+								"6824282a4332ad3c1a12c579"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "filter",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:2636/publication/filter/tecnología",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"publication",
+								"filter",
+								"tecnología"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Comments",
+			"item": [
+				{
+					"name": "getAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:2636/comment/getAll",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"comment",
+								"getAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addComment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "Dylan",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "alñsdkjfañlskdjfñlas",
+									"type": "text"
+								},
+								{
+									"key": "publication",
+									"value": "6824282a4332ad3c1a12c579",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:2636/comment/save",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"comment",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateComment",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "description",
+									"value": "Muy buena tarea",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:2636/comment/update/6824283e4332ad3c1a12c57b",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"comment",
+								"update",
+								"6824283e4332ad3c1a12c57b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteComment",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:2636/comment/delete/6824283e4332ad3c1a12c57b",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"comment",
+								"delete",
+								"6824283e4332ad3c1a12c57b"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
